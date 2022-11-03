@@ -63,11 +63,76 @@
 
 "10"
 
-function makeCopy(obj) {
-	// return obj
-    let arr = Object.entries(obj)
-    let result = Object.fromEntries(arr)
-    return result
-}
-console.log(makeCopy({item: 'phone', money: '$2000'}))
+// function makeCopy(obj) {
+// 	// return obj
+//     let arr = Object.entries(obj)
+//     let result = Object.fromEntries(arr)
+//     return result
+// }
+// console.log(makeCopy({item: 'phone', money: '$2000'}))
 
+
+"#11  has Key"
+
+// function hasKey(obj, key) {
+// 	return key in obj ? true : false
+// }
+// console.log(hasKey({ a: 44, b: 45, c: 46 }, "d"))
+
+"#12 "
+
+// function profit(info) {
+// 	const {sellprice, costprice, inventory} = info
+//     return Math.round((sellprice - costprice)*inventory)
+// }
+// console.log(profit({
+//     costprice: 32.67,
+//     sellprice: 45.00,
+//     inventory: 1200
+//   }))
+
+"#13 isEmpty"
+
+// function isEmpty(obj) {
+// 	return Object.keys(obj).length === 0
+// }
+// console.log(isEmpty({}))
+
+"#14 sortDrinkByPrice"
+
+// function sortDrinkByPrice(drinks) {
+// 	return drinks.sort((a, b) => a.price - b.price)
+// }
+// console.log(sortDrinkByPrice([{name: "lime", price: 160}, {name: "lemonade", price: 50}]))
+
+"#15"
+
+// function isFirstSuperior(arr1, arr2) {
+// 	return arr1 > arr2
+// }
+// console.log(isFirstSuperior([1, 2, 3, 4], [1, 2, 3, 4]))
+
+"16 calculateDifference"
+
+// function calculateDifference(obj, limit) {
+// 	let result = Object.values(obj).reduce((a, b) => (a + b) - limit)
+//     return result
+// }
+// console.log(calculateDifference({ skate: 10, painting: 20 }, 19))
+
+"17 ink levels"
+
+// function inkLevels(inks) {
+//     return Math.min(...Object.values(inks))
+// }
+// console.log(inkLevels({"cyan": 23, "magenta": 12, "yellow": 10}))
+  
+"18 addName"
+
+// function addName(obj, name, value) {
+// 	let arr = Object.entries(obj)
+//     let arr1 = arr.concat([[name,value]])
+//     let arr2 = Object.fromEntries(arr1)
+//     return arr2
+// }
+// console.log(addName({ piano: 500 }, "Brutus", 400))
