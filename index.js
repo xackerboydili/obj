@@ -136,3 +136,16 @@
 //     return arr2
 // }
 // console.log(addName({ piano: 500 }, "Brutus", 400))
+
+
+const obj = {
+    name: 'dilshod',
+    surname: 'Isoqov',
+    age : 20,
+}
+
+let keys = Object.keys(obj).map((value)=>console.log(value))
+
+for(props in obj){
+    console.log(props)
+}
